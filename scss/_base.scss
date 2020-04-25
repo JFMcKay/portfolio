@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700;900&display=swap');
+// font-family: 'Lato', sans-serif;
+// font-family: 'Indie Flower', cursive;
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+h1, h2{
+    padding: 1rem 0;
+    margin: 0;
+    font-family: 'Indie Flower', sans-serif;
+}
+header {
+    width: 960px;
+    margin: 0 auto;
+        
+}
+h2 {
+    font-size: 2.5em;
+}
+body {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Lato', sans-serif;
+
+    main {
+        width: 95%;
+        max-width: 1020px;
+        display: flex;
+        max-width: 960px;
+        width: 90%;
+        height: 90vh;
+        margin: 0 auto;
+
+        #head { 
+            margin: 2em;
+            width: 100%;
+            justify-self: flex-end;
+            align-self: center;
+            // background-image: url(../images/bigHead.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom;
+            height: 100%;
+        }
+        .projects {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            flex-direction: column;
+            height: 100%;
+            h1 {
+                display: flex;
+                padding: 1rem;
+                background-color: black;
+                color: #fff;
+                font-size: 2.5em;
+                height: 9vh;
+
+            }
+            div {
+                width: 100%;
+                background-color: rgb(0, 0, 0);
+                h2 {
+                    font-size: 1em;
+                    font-family: sans-serif;
+                }
+                display: flex;
+                flex-direction: column;
+                height: 81vh;
+                margin: 0 auto;
+                .examples {
+                    border-bottom: solid 1px rgb(255, 255, 255);
+                    width: 50%;
+                    background-color: #666;
+                    &:last-of-type {
+                        border: none;
+                    }
+                }
+            }
+        }
+        .contact {
+                width: 100%;
+                h1 {
+                    padding: 1rem;
+                    background-color: black;
+                    color: #fff;
+                    font-size: 2.5em;
+                    height: 8vh;
+                }
+
+            form {
+                background-color: #999;
+                width: 100%;
+                height: 82vh;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+               div {
+                   
+                    width: 40%;
+                    padding: 1.5em;
+                    border-radius: 10px;
+                    background-color: rgba(133, 133, 133, 0.493);
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    label {
+                        margin-bottom: .5em;
+                    }
+                    input {
+                        padding: .5em;
+                        margin-bottom: .5em;
+                    }
+               }
+            }
+        }
+        .hidden {
+            display: none;
+        }
+        .tranp {
+            transition: opacity 2s ease-in-out;
+            opacity: 0;
+        }
+        .opaque {
+            transition: opacity 2s ease-in-out;
+            opacity: 1;
+        }
+    }
+
+    footer {
+        background-color: #000;
+        border-radius: 10px 10px 0 0;
+        color: #fff;
+        max-width: 100%;
+        height: 10vh;
+        div {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h1 {
+                padding: 1rem;
+                font-size: 3rem;
+                align-self: center;
+                white-space: nowrap;
+
+            }
+            ul {     
+                align-self: center;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                justify-content: space-around;
+                li {
+
+                    list-style: none;
+                    text-decoration: none;
+                    border: none;
+                    color: rgb(255, 255, 255);
+                    padding: 10px 32px;
+                    font-size: 1.25em;
+                    text-align: center;
+                    opacity: 0.4;
+                    transition: 0.3s;
+                    white-space: nowrap;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 1;
+                    }   
+                }
+
+            }
+        }
+    }
+}
