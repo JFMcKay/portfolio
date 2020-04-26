@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Spectre</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGl.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <h1>Spectre</h1>
+    <section>
+      <p>This game was something I kind of just created for fun to see the process of putting something on the google play store and learning C# and the Unity game engine.  I am proud that I did it but it definitely was a learning experience that I may revisit someday because it isn't complete. It was built for a touch screen so all you do is click.</p>
+    </section>
+    <div class="webgl-content">
+      <div id="unityContainer"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Spectre</div>
+      </div>
+    </div>
+  </body>
+</html>

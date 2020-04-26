@@ -1,0 +1,20 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#unityContainer {
+    width: 960px;
+    height: 600px
+}

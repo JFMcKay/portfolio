@@ -5,26 +5,7 @@ var curImg = BACKG;
 curImg = document.getElementById("head").style.backgroundImage='url(' + origImg + ')';
 console.log(origImg + " is the original location");
 console.log(secImg +" is the second image location");
-// var randInt = Math.floor(Math.random() * Math.floor(20000));
-// setInterval(flicker, randInt);
-function flicker() {
-    randInt = Math.floor(Math.random() * Math.floor(2000));
-    // console.log(randInt);
-    if(BACKG === curImg) {
-        curImg = document.getElementById("head").style.backgroundImage='url(' + secImg + ')'; 
-        setTimeout(function(){
-            curImg = document.getElementById("head").style.backgroundImage='url(' + origImg + ')';
-        }, 2000);
-    } else {
-        // a Timeout function to hold the image a little longer then switching back the original
-        setTimeout(function(){
-            curImg = document.getElementById("head").style.backgroundImage='url(' + origImg + ')';
-        }, 2000);
-        console.log('Does it even get here?');
 
-        
-    }
-};
 
 var mouseleft = false;
 $( document ).ready(function() {
@@ -32,28 +13,20 @@ $( document ).ready(function() {
     $("#head").animate({
         height: '100%'
     }, "slow");
-    $(".examples").mouseover(function(){
-        $(this).animate({
-            width: "100%"
-    }).mouseleave(function(){
-        $(this).animate({
-            width: "50%"
-        });
-    });
-    });
-
+    //Navigation code
     $("#projects").click(function(){
-        $(".contact, .myHead").addClass("hidden tranp");
-        $(".projects").removeClass("hidden").addClass("opaque");
-        
+        $(".contact, .myHead").addClass("hidden");
+        $("main").addClass("hOther");
+        $(".projects").removeClass("hidden");    
     });
-
     $("#main").click(function(){
-        $(".projects, .contact").addClass("hidden tranp");
+        $(".projects, .contact").addClass("hidden");
+        $("main").removeClass("hOther");
         $(".myHead").removeClass("hidden");
     });
     $("#contactMe").click(function(){
-        $(".projects, .myHead").addClass("hidden tranp");
+        $(".projects, .myHead").addClass("hidden");
+        $("main").addClass("hOther");
          $(".contact").removeClass("hidden");
     });
     $("#head").mouseover(function(){
@@ -74,3 +47,22 @@ $( document ).ready(function() {
 
 });
 
+//FLICKER function
+function flicker() {
+    randInt = Math.floor(Math.random() * Math.floor(2000));
+    // console.log(randInt);
+    if(BACKG === curImg) {
+        curImg = document.getElementById("head").style.backgroundImage='url(' + secImg + ')'; 
+        setTimeout(function(){
+            curImg = document.getElementById("head").style.backgroundImage='url(' + origImg + ')';
+        }, 2000);
+    } else {
+        // a Timeout function to hold the image a little longer then switching back the original
+        setTimeout(function(){
+            curImg = document.getElementById("head").style.backgroundImage='url(' + origImg + ')';
+        }, 2000);
+        console.log('Does it even get here?');
+
+        
+    }
+};

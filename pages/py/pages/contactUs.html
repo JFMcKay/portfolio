@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Yogurt - Contact Us - for parties, fundraising, catering, jobs or other info.</title>
+    <meta name="description" content="Paradise yogurt in Mission Valley. A dessert oasis in the heart of Mission Valley. We have frozen yogurt voted best in San Diego.  We also have smoothies, acai bowls and hurricanes similar to a blizzard. We host birthday parties and cater events all you have to do is contact us.">    
+    <meta name ="author" content="Jeremy M, Erika S, Dina T, E Bingham">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/ef9be9ceee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--   HEADER WITH NAVIGATION -->
+   <main>
+      
+       <header>
+          <section>
+              <a href="../index.html"><img src="../images/homePageImages/headerLogo.png" alt="logo"></a>
+               <h1><a href="../index.html">Paradise Yogurt</a></h1>
+<!--               THE FOLLOWING CODE IS USEFUL FOR DROP DOWN BUTTON -->
+               <label for="showMenu" class="showMenu"><img src="../images/icons/HamburgerMenu.png" alt="Menu Icon"></label>
+               <input type="checkbox" id="showMenu" role="button">
+               <nav class="menu">
+                   <ul>
+                       <li><a href="about.html">About</a></li>
+                       <li><a href="mainMenu.html">Menu</a></li>
+                       <li><a href="delivery.html">Delivery</a></li>
+                       <li><a href="catering.html">Catering</a></li>
+                   </ul>
+               </nav>
+<!--               END OF CODE FOR DROP DOWN BUTTON-->
+           </section>
+       </header>
+    <section id="mainSection" class="aboutMain double">
+       <!-- THIS WILL BE WHERE ALL THE DIFFENCES BETWEEN THE PAGES WILL BEGIN -->
+    <article class="noBorder">
+        <figure>
+           <img src="../images/contact/mail.png" alt="mail">
+
+        </figure>
+        <form action="mailto:info@paradiseyogurt.com" method="post" id="saveForm">
+            <fieldset id="addressForm">
+               <ul>
+                    <li>
+                        <input type="radio" id="him" name="gender">
+                        <label for="him">Him</label>
+                        <input type="radio" id="her" name="gender">
+                        <label for="her">Her</label>
+                        <input type="radio" id="they" name="gender">
+                        <label for="they">They</label>
+                    </li>  
+                    <li>
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" name="first_name" required autofocus>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@domain.com" required>
+                    </li>
+                    <li>
+                         <label for="phone">Phone</label>
+                         <input type="tel" id="phone" name="phone" placeholder="111-111-1111">
+                    <li id="subjectChoice">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="bedroom">Birthday Parties</option>
+                            <option value="office">Catering</option>
+                            <option value="house">Feedback</option> 
+                            <option value="apt">Franchise</option>
+                            <option value="condo">Fundraising</option>
+                            <option value="mobile">Jobs</option>
+                            <option value="bedroom">Info</option>
+                            <option value="office">Other</option>
+                        </select>
+                    </li>
+                    <li>
+                            <label for="msg">Your message:</label>
+                            <textarea name="message" id="msg"></textarea>
+                    </li>
+                    <li>
+                            <p>Check the email and/or the text box if you would like to receive special offers and promotions from Paradise Yogurt!</p>
+                            <input type="checkbox" value="chkEmail" name="chkEmail" id="chkEmail">
+                            <label for="chkEmail">Email</label>
+                            <input type="checkbox" value="text" name="text" id="text">
+                            <label for="text">Text</label>
+                    </li>
+                </ul>
+             </fieldset>
+             <div>
+                    <button type="submit" id="submit"></button>
+                    <button type="reset" id="clear"></button>
+             </div>  
+            </form>
+  </article>
+
+  <aside>
+    <div id="mapWrapper">
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.644151973869!2d-117.1585856851138!3d32.77517549138705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95539325a0ddb%3A0xb7c9ed39d839735d!2sParadise%20Yogurt!5e0!3m2!1sen!2sus!4v1578884634973!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  </div>
+    <h2>Address:</h2>
+    <p>
+     5664 Mission Center Road, #401, San Diego, CA. 92108<br>
+     Ph.:619-295-9648 </p>
+    <h2>Working hours:<br>
+    </h2>
+      Sunday-Thuesday <br> 11am-10 pm<br>
+      Friday - Saturday <br> 11am-10:30 pm <br>
+    
+    <a href="awards.html">
+            <h2>Check out our awards<br></h2>
+            <figure>
+            <img src="../images/about/Awards.png" alt="frozen_yogurt" id="awards">
+
+                </figure>
+    </a>
+  </aside>
+
+       <!-- END OF MAIN SECTION -->
+       </section>
+       <footer>
+          <section>
+           <nav>
+               <ul>
+                   <li><a href="../pages/merchandise.html">Merchandise</a></li>
+                   <li><a href="../pages/franchise.html">Franchise</a></li>
+                   <li><a href="contactUs.html">Contact Us</a></li>
+               </ul>
+           </nav>
+           <ul>
+               <li><h3>Paradise Yogurt</h3></li>
+               <li>Open Everyday</li>
+               <li>11 am to 10 pm</li>
+               <li>5644 Mission Center Rd</li>
+               <li>San Diego, CA 92108</li>
+               <li>619-295-9648</li>
+           </ul>
+           <div>
+               <a href="https://twitter.com/paradiseyogurt"><i class="fab fa-twitter-square textShadow"></i></a>
+               <a href="https://www.instagram.com"><i class="fab fa-instagram textShadow"></i></a>
+               <a href="https://www.facebook.com/paradise.yogurt/posts/1974205782624004"><i class="fab fa-facebook-square textShadow"></i></a>
+           </div>
+           </section>
+       </footer>
+   </main>
+    
+</body>
+</html>
