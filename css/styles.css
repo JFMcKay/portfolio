@@ -10,7 +10,6 @@ img {
   width: 100%; }
 
 h1, h2 {
-  padding: 1rem 0;
   margin: 0;
   font-family: "Indie Flower", sans-serif; }
 
@@ -20,15 +19,14 @@ header {
   header .hidden {
     display: none; }
   header h1 {
+    display: block;
     margin: 0 auto;
-    max-width: 960px;
-    padding: 1rem;
+    max-width: 950px;
+    width: 100%;
+    padding: .5em;
     background-color: #000000;
     color: #fff;
-    font-size: 2.5em; }
-
-h2 {
-  font-size: 2.5em; }
+    height: 9vh; }
 
 body {
   padding: 0;
@@ -82,25 +80,24 @@ body {
           font-size: 1em;
           font-family: sans-serif; }
         body main .projects div .examples {
-          border-bottom: solid 1px white;
+          border: solid 1px #000000;
           width: 50%;
           background-color: #000000;
-          -webkit-transition: width 1s ease-in;
-          transition: width 1s ease-in; }
+          -webkit-transition: width .5s ease-in;
+          transition: width .5s ease-in; }
           body main .projects div .examples:last-of-type {
             border: none; }
           body main .projects div .examples:hover {
             width: 100%; }
-        body main .projects div .rps {
+        body main .projects div .rps, body main .projects div .spectre, body main .projects div .pYogurt {
           background-image: url(../images/rps.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover; }
         body main .projects div .spectre {
-          background-image: url(../images/spectre.jpg);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover; }
+          background-image: url(../images/spectre.jpg); }
+        body main .projects div .pYogurt {
+          background-image: url(../images/py.jpg); }
     body main .contact {
       width: 100%; }
       body main .contact form {
@@ -114,7 +111,8 @@ body {
             -ms-flex-align: center;
                 align-items: center; }
         body main .contact form div {
-          width: 40%;
+          min-width: 300px;
+          width: 50%;
           padding: 1.5em;
           border-radius: 10px;
           background-color: rgba(133, 133, 133, 0.493);
@@ -128,7 +126,8 @@ body {
           margin: 0 auto; }
           body main .contact form div label {
             margin-bottom: .5em; }
-          body main .contact form div input {
+          body main .contact form div input, body main .contact form div textarea, body main .contact form div button {
+            border-radius: 10px;
             padding: .5em;
             margin-bottom: .5em; }
     body main .hidden {
@@ -150,13 +149,15 @@ body {
               flex-direction: row;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
+              justify-content: space-between;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
       body footer div h1 {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        width: 100%;
         padding: 1rem;
-        font-size: 3rem;
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
         white-space: nowrap; }
       body footer div ul {
         -ms-flex-item-align: center;
@@ -191,5 +192,33 @@ body {
   margin: 0 auto; }
 
 main.hOther {
-  height: 80.3vh; }
+  height: 81vh; }
+
+.example--element {
+  margin: 0 auto;
+  max-width: 90%;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .example--element:hover {
+    opacity: .5; }
+  .example--element h3 {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    margin: 0 auto;
+    color: #000; }
 /*# sourceMappingURL=styles.css.map */

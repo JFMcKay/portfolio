@@ -29,6 +29,11 @@ $( document ).ready(function() {
         $("main").addClass("hOther");
          $(".contact").removeClass("hidden");
     });
+    $(".spectre").click(function(){
+
+    });
+    // 1, {minFontSize: '1em', maxFontSize: '3em'}
+    $(".fitThis").fitText();
     $("#head").mouseover(function(){
         mouseleft = false;
         (function loop() {

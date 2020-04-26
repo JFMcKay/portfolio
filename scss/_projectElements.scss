@@ -1,0 +1,24 @@
+.example--element {
+    margin: 0 auto;
+    max-width: 90%;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &:hover {
+        opacity: .5;
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: bold;
+        font-family: $lato;
+        text-align: center;
+        width: 100%;
+        margin: 1em;
+        padding: 1em;
+        background-color: #fff;
+        margin: 0 auto;
+        color: #000;
+    }
+}
