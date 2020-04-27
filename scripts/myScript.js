@@ -29,8 +29,14 @@ $( document ).ready(function() {
         $("main").addClass("hOther");
          $(".contact").removeClass("hidden");
     });
-    $(".spectre").click(function(){
-
+    $(".spectreGo").click(function(){
+        window.open("http://www.jeremymckay.com/pages/spectre","mywindow","resizable=1, width=1000, height= 800");
+    });
+    $(".pyGo").click(function(){
+        window.open("http://www.jeremymckay.com/pages/py/projintro.html","mywindow","resizable=1, width=1000, height= 800");
+    });
+    $(".rpsGo").click(function(){
+        window.open("http://www.jeremymckay.com/pages/rps","mywindow","resizable=1, width=1000, height= 800");
     });
     // 1, {minFontSize: '1em', maxFontSize: '3em'}
     $(".fitThis").fitText();

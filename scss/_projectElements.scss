@@ -1,11 +1,12 @@
 .example--element {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 95%;
     opacity: 0;
     transition: opacity 1s ease-in;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
     &:hover {
         opacity: .5;
     }
@@ -20,5 +21,11 @@
         background-color: #fff;
         margin: 0 auto;
         color: #000;
+    }
+    img {
+        cursor: pointer;
+        width: 75px;
+        position: absolute;
+        right: 50px;
     }
 }
