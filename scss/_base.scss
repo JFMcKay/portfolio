@@ -164,28 +164,24 @@ body {
             margin: 0 auto;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-items: stretch;
+            justify-content: space-around;
+            // align-items: stretch;
             h1 {
                 flex-basis: 50%;
-                width: 100%;
+                width: 50%;
                 padding: 1rem;
-                white-space: nowrap;
 
             }
             ul {     
                 align-self: center;
                 display: flex;
                 flex-direction: row;
-                position: relative;
-                justify-content: space-around;
+                justify-content: space-evenly;
+                width: 50%;
                 li {
-
                     list-style: none;
-                    text-decoration: none;
-                    border: none;
                     color: rgb(255, 255, 255);
-                    padding: 10px 32px;
+                    padding: 10px;
                     font-size: 1.25em;
                     text-align: center;
                     opacity: 0.4;

@@ -1,5 +1,6 @@
 var origImg = window.location + '/../images/bigHead.png';
-var secImg =  window.location + '/../images/big0.png';
+var secImg =  window.location + '/../images/big1.png';
+var clickHead = window.location + '/../images/bigOof.png';
 const BACKG = document.getElementById("head").style.backgroundImage='url(' + origImg + ')';
 var curImg = BACKG;
 curImg = document.getElementById("head").style.backgroundImage='url(' + origImg + ')';
@@ -30,7 +31,7 @@ $( document ).ready(function() {
          $(".contact").removeClass("hidden");
     });
     $(".spectreGo").click(function(){
-        window.open("http://www.jeremymckay.com/pages/spectre","mywindow","resizable=1, width=1000, height= 800");
+        window.open("http://www.jeremymckay.com/pages/spectre","mywindow","resizable=1, width=1000, height= 960");
     });
     $(".pyGo").click(function(){
         window.open("http://www.jeremymckay.com/pages/py/projintro.html","mywindow","resizable=1, width=1000, height= 800");
@@ -39,7 +40,6 @@ $( document ).ready(function() {
         window.open("http://www.jeremymckay.com/pages/rps","mywindow","resizable=1, width=1000, height= 800");
     });
     // 1, {minFontSize: '1em', maxFontSize: '3em'}
-    $(".fitThis").fitText();
     $("#head").mouseover(function(){
         mouseleft = false;
         (function loop() {
@@ -55,6 +55,12 @@ $( document ).ready(function() {
     $("#head").mouseleave(function(){
         mouseleft = true;
     });
+    $("#head").mousedown(function(){
+        $("#head").css("background-image", "url(" + clickHead + ")");
+    }).mouseup(function(){
+        $("#head").css("background-image", "url(" + BACKG + ")");
+
+    })
 
 });
 

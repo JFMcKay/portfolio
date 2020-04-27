@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy McKay - The most okayest coder.</title>
-    <!-- <script src="scripts/moveeyes.js"></script> -->
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
@@ -57,11 +56,11 @@
             <form action="">
                 <div>
                     <label for="name">Name: </label>
-                    <input type="text" placeholder="Enter your name">
+                    <input id="name" type="text" placeholder="Enter your name">
                     <label for="email">Email: </label>
-                    <input type="text" placeholder="Enter your email">
+                    <input id= "email" type="text" placeholder="Enter your email">
                     <label for="phone">Phone: </label>
-                    <input type="text" placeholder="(999)999-9999">
+                    <input id="phone" type="text" placeholder="(999)999-9999">
                     <label for="msg">Message: </label>
                     <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
                     <button>Send</button>
@@ -73,9 +72,9 @@
     </main>
     <footer>
         <div>
-            <h1 id="headText fitThis">Jeremy McKay</h1>
+            <h1 id="headText" class="fitThis">Jeremy McKay</h1>
 
-            <ul>
+            <ul id="navBar">
                 <li id="main">Main</li>
                 <li id="projects">Projects</li>
                 <li id="contactMe">Contact Me</li>
@@ -84,7 +83,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script src="./scripts/words.js"></script> -->
-  <script src="./scripts/fittext.js"></script>
+  <!-- <script src="./scripts/fittext.js"></script> -->
   <script src="./scripts/myScript.js"></script>
 
 </body>
