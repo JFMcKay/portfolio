@@ -1,26 +1,33 @@
 .example--element {
     margin: 0 auto;
     max-width: 95%;
+    height: 95%;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in-out;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: #fff;
     position: relative;
     &:hover {
-        opacity: .5;
+        opacity: .33;
     }
     h3 {
         font-size: 2em;
         font-weight: bold;
-        font-family: $lato;
+        font-family: $indieF;
         text-align: center;
         width: 100%;
-        margin: 1em;
-        padding: 1em;
-        background-color: #fff;
         margin: 0 auto;
         color: #000;
+    }
+    p {
+        border-top: 1px solid #000;
+        padding-top: 1em;
+        font-family: $lato;
+        font-size: 1em;
+        font-weight: 700;
     }
     img {
         cursor: pointer;

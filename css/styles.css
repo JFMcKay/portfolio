@@ -251,35 +251,47 @@ main.hOther {
 .example--element {
   margin: 0 auto;
   max-width: 95%;
+  height: 95%;
   opacity: 0;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
   position: relative;
 }
 
 .example--element:hover {
-  opacity: .5;
+  opacity: .33;
 }
 
 .example--element h3 {
   font-size: 2em;
   font-weight: bold;
-  font-family: "Lato", sans-serif;
+  font-family: "Indie Flower", sans-serif;
   text-align: center;
   width: 100%;
-  margin: 1em;
-  padding: 1em;
-  background-color: #fff;
   margin: 0 auto;
   color: #000;
+}
+
+.example--element p {
+  border-top: 1px solid #000;
+  padding-top: 1em;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 .example--element img {

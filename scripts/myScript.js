@@ -7,7 +7,26 @@ curImg = document.getElementById("head").style.backgroundImage='url(' + origImg 
 console.log(origImg + " is the original location");
 console.log(secImg +" is the second image location");
 
-
+function whichTransitionEvent(){
+    var t,
+        el = document.createElement("fakeelement");
+  
+    var transitions = {
+      "transition"      : "transitionend",
+      "OTransition"     : "oTransitionEnd",
+      "MozTransition"   : "transitionend",
+      "WebkitTransition": "webkitTransitionEnd"
+    }
+  
+    for (t in transitions){
+      if (el.style[t] !== undefined){
+        return transitions[t];
+      }
+    }
+  }
+  
+  var transitionEvent = whichTransitionEvent();
+  
 var mouseleft = false;
 $( document ).ready(function() {
     $("#head").height(0);
@@ -29,6 +48,13 @@ $( document ).ready(function() {
         $(".projects, .myHead").addClass("hidden");
         $("main").addClass("hOther");
          $(".contact").removeClass("hidden");
+    });
+
+    //Working on testing the transistion even to end this does it the first time.
+    
+    $('.example--element').one(transitionEvent,
+              function(event) { 
+        console.log('this is pointless');
     });
     $(".spectreGo").click(function(){
         window.open("http://www.jeremymckay.com/pages/spectre","mywindow","resizable=1, width=1000, height= 960");
